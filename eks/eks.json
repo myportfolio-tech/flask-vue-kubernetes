@@ -1,0 +1,47 @@
+{
+    "cluster": {
+        "name": "getting-started-eks",
+        "arn": "arn:aws:eks:us-east-1:822575900206:cluster/getting-started-eks",
+        "createdAt": 1661711208.288,
+        "version": "1.22",
+        "roleArn": "arn:aws:iam::822575900206:role/getting-started-eks-role",
+        "resourcesVpcConfig": {
+            "subnetIds": [
+                "subnet-065a3c058e3f40c2b",
+                "subnet-0360164d087307fa0",
+                "subnet-086312d43eb0eb779"
+            ],
+            "securityGroupIds": [
+                "sg-0cc2fef4a799efcec"
+            ],
+            "vpcId": "vpc-0ac2c3ea5ab2057a9",
+            "endpointPublicAccess": true,
+            "endpointPrivateAccess": false,
+            "publicAccessCidrs": [
+                "0.0.0.0/0"
+            ]
+        },
+        "kubernetesNetworkConfig": {
+            "serviceIpv4Cidr": "10.100.0.0/16",
+            "ipFamily": "ipv4"
+        },
+        "logging": {
+            "clusterLogging": [
+                {
+                    "types": [
+                        "api",
+                        "audit",
+                        "authenticator",
+                        "controllerManager",
+                        "scheduler"
+                    ],
+                    "enabled": false
+                }
+            ]
+        },
+        "status": "CREATING",
+        "certificateAuthority": {},
+        "platformVersion": "eks.5",
+        "tags": {}
+    }
+}
